@@ -1,19 +1,22 @@
 % Important notes
-% 1. There is no italic version of Saar Pro font.
+% Download fonts from https://www.brand.unsw.edu.au/
+% Currently the sizes do not work
 
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontspec}
+\newfontfamily{\clancy}{Clancy}
+\newfontfamily{\roboto}{Roboto}
+\newfontfamily{\robotomono}{Roboto Mono}
 
-%% roman font for the slides
-%\setmainfont{Saar Pro Light}[BoldFont={Saar Pro Headline},]
-%% sans serif font for the slides
-%\setsansfont{Saar Pro Light}[BoldFont={Saar Pro Regular},]
-%% monospaced font fro the slides		
-%\setmonofont{Saar Pro Light}[BoldFont={Saar Pro Regular},]
+\setsansfont[BoldFont={Roboto Medium}, ItalicFont={Roboto Italic}, BoldItalicFont={Roboto Medium Italic}]{Roboto}
+\setmonofont{Roboto Mono}
 
-\setbeamerfont{title}{family=\sffamily, series=\bfseries, size=\LARGE}
-\setbeamerfont{subtitle}{family=\sffamily, series=\mdseries, size=\large}
 
-\setbeamerfont{frametitle}{family=\sffamily, series=\bfseries, size=\Large}
-\setbeamerfont{framesubtitle}{family=\sffamily, series=\mdseries, size=\large}
+\setbeamerfont{title}{family=\clancy, series=\bfseries}
+\setbeamerfont{section title}{family=\clancy}
+
+\setbeamerfont{block title}{family=\clancy}
+\setbeamerfont{block title alerted}{family=\clancy}
+
+\setbeamerfont{subtitle}{family=\clancy}
+\setbeamerfont{frametitle}{family=\clancy}
 
